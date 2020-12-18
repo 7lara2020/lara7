@@ -34,6 +34,7 @@ Route::group(['middleware' => 'auth'], function(){
     Route::view('create-post','create_new_post');
     Route::post('create-post','PostController@createNewPost');
 
+    
     Route::get('delete-post','PostController@deletePost')->name('deletePost');
     Route::post('edit-post','PostController@editPost')->name('editPost');
 });
